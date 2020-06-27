@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+views_tum = [123, 135, 167, 189, 233, 246, 303, 333, 388, 402, 432, 444, 457, 462, 490, 509, 544, 555, 557, 562, 610, 673, 677, 689, 700, 777, 790, 989, 1001, 1090, 1123, 1344, 1446, 1600, 1676, 1800, 2099, 3000, 3078, 4000]
+views_fac = [56, 70,90, 145, 190, 290, 323, 344, 344, 398, 450, 456, 490, 560, 566, 568, 675, 740, 744, 874, 900, 974, 988, 993, 1000, 1090, 1233, 1898, 1978, 1999, 2000, 2034, 2098, 2099, 2121, 2677, 3000, 3087, 3999, 4334]
+
+days = range(1,41)
+plt.plot(days,views_tum, label = 'Tumblr Views', color='darkgreen',  linestyle = '-')
+plt.plot(days,views_fac, label = 'Facebook Views', color='blue',  linestyle = '-')
+
+plt.xlabel('Days')
+plt.ylabel('Views')
+plt.legend(loc = 'lower right')
+plt.grid(True, color='yellow', linestyle = '-.')
+plt.title('Video Trend on Daily Basis')
+plt.show()
